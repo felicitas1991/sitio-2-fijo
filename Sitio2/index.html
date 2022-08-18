@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8 ">
+	<title>sitio2</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+
+</head>	
+<body>
+	<div class="inicio" >
+		<div class="container logo">	
+		<nav> 
+		<a href="">Mi Cuenta</a>
+		<a href="">Registrate</a>
+		<a href=""><i class="fas fa-user"></i> Ingresa</a>
+		</nav>
+		<img src="images/logo.png">	
+		<div class=clear></div>
+	</div>
+	<div class="container">	
+		<h1>Lorem ipsum dolor sit amet,
+		consectetur adipiscing elit.</h1>
+		<a href="#registro"class="btn btn-blanco">Registrate</a>
+	
+	</div>
+	</div>
+	<div class="container">
+		<section class="ilustraciones">
+			<h2>Ilustraciones</h2>
+			<ul>
+			<li><a href="images/ampliadas/ilustracion-1.jpg" data-fancybox="gallery" ><img src="images/miniaturas/ilustracion-1.jpg" ></a>
+			 <p>Lorem ipsum dolor amet, consectetur tempor
+				incididunt ut labore et dolore.</p></li>
+			<li><a href="images/ampliadas/ilustracion-2.jpg" data-fancybox="gallery"> 	<img src="images/miniaturas/ilustracion-2.jpg" ></a>
+			 <p>Lorem ipsum dolor amet, consectetur tempor
+				incididunt ut labore et dolore. </p></li>
+			</ul><div class=clear></div>
+			</section>
+			<section class="fotos">
+			<h2>Fotos</h2>
+			<ul>
+			<li><a href="images/ampliadas/foto-6.jpg" data-fancybox="gallery">	<img src="images/ampliadas/foto-6.jpg"></a>
+			 <p>Lorem ipsum dolor amet, consectetur tempor
+				incididunt ut labore et dolore.</p></li>	
+			<li><img src="images/ampliadas/foto-5.jpg"></a>
+			 <p>Lorem ipsum dolor amet, consectetur tempor
+				incididunt ut labore et dolore. </p></li>	
+			<li><img src="images/ampliadas/foto-4.jpg"></a>
+			 <p>Lorem ipsum dolor amet, consectetur tempor
+			incididunt ut labore et dolore. </p></li>
+			<li><img src="images/ampliadas/foto-3.jpg"></a>
+			 <p>Lorem ipsum dolor amet, consectetur tempor
+				incididunt ut labore et dolore. </p></li>
+			 <li><img src="images/ampliadas/foto-2.jpg"></a>
+			 <p>Lorem ipsum dolor amet, consectetur tempor
+				incididunt ut labore et dolore. </p></li>
+			<li><img src="images/ampliadas/foto-1.jpg"></a>
+			 <p>Lorem ipsum dolor amet, consectetur tempor
+				incididunt ut labore et dolore. </p></li>
+			</ul><div class=clear></div>
+		</section>
+	</div>
+				
+	<footer class="registro">
+		
+		<div class="container">
+			
+			<div class="col3 azul" id="registro">
+			<h3>REGISTRATE</h3>
+			<p>Lorem ipsum dolor amet,
+				consectetur incididunt</p>
+			<a class="btn btn-blanco">REGISTRATE</a>
+			</div>
+			
+			<div class="col3 blanca" >
+			<table class="planes">
+				<tr>
+					<th>PLAN 1</th>
+					<th>PLAN 2 PRO</th>
+				</tr>
+				<tr>
+					<td>Lorem</td>
+					<td>Lorem</td>
+				</tr>
+				<tr>
+					<td>lorem</td>
+					<td>Lorem ipsum dolor amet,
+					incididun</td>
+				</tr>
+				<tr>
+					<td>GRATIS</td>
+					<td>PRECIO</td>
+				</tr>
+			</table>
+			
+		   	</div>
+		
+			<div class="col3 blanca">
+			<form>
+				<input type="text" name="" class="campo-form" placeholder="usuario">
+				<input type="password" name="" class="campo-form" placeholder="clave">
+				<input type="submit" value="ingresar" class="btn btn-azul">
+			</form>
+			<p>Olvide mi usuario o clave</p>
+			</div><div class=clear>
+		
+		</div>
+		<div class="redes">
+		<a href="https://www.facebook.com"  target="_blank"><i class="fab fa-facebook-square"></i><span>"Facebook"</span></a>
+		<a href="https://www.instagram.com"  target="_blank"><i class="fab fa-instagram"></i><span>"Instagram"</span></a>
+		<a href="https://www.linkedin.com"	target="_blank"><i class="fab fa-linkedin"></i><span>"Linkdin"</span></a>
+		</div>
+		<a href="javascript:void(0);" id="scroll" title="Scroll to Top" >Top<span></span></a>
+
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript">
+			
+	//scrolltop
+
+	$(document).ready(function(){
+   		 $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#scroll').fadeIn();
+        }else{
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+
+
+			//anclas
+			
+ 	 // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+	</script>
+
+</body>
+</html>
